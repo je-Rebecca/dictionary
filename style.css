@@ -1,0 +1,122 @@
+:root {
+  --fontsize-large: 50px;
+  --padding: 10px;
+  --checked: rgb(90, 90, 90);
+  --white-color: white;
+  --box-span: 14px;
+}
+* {
+  margin: 0px;
+  text-align: center;
+  /* align-items: center; */
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  align-items: center;
+  height: 100vh;
+  /* margin-top: 200px; */
+}
+.header {
+  display: flex;
+  background-color: var(--white-color);
+  justify-content: space-evenly;
+}
+.wrap {
+  background-color: rgb(255, 255, 255, 0.5);
+  padding: 10px;
+  width: 300px;
+  margin: auto;
+}
+.wrap h1,
+.resolutionBox {
+  margin: var(--padding);
+}
+.advice_js {
+  justify-content: ;
+}
+.form,
+.hidden {
+  display: none;
+}
+.js-clock h1 {
+  font-size: calc(var(--fontsize-large) * 2);
+  margin-top: calc(var(--padding) * 2);
+  color: var(--white-color);
+}
+.span_meg {
+  margin: var(--box-span);
+}
+.js-word {
+  margin: var(--box-span);
+  display: flex;
+  flex-direction: column;
+}
+.js-word p {
+  text-align: left;
+}
+.showing {
+  display: block;
+}
+.js-wordList > li {
+  display: flex;
+  /* padding-right: calc(var(--padding) * 3); */
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+}
+.js-wordList > li > #id {
+  margin: 7px;
+}
+.js-wordList > li > #spanBox {
+  padding: 0px 0px 0px 10px;
+  /* padding-left: var(--padding); */
+}
+.js-wordList > li > #spanBox > span {
+  padding-left: calc(var(--padding) / 2);
+}
+.js-wordList {
+  padding-left: 0px;
+}
+.js-wordList #trashCan {
+  opacity: 0%;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-size: 18px;
+}
+.js-wordList #trashCan:hover {
+  opacity: 100%;
+}
+.checked {
+  text-decoration-line: line-through;
+  color: var(--checked);
+}
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 5s linear;
+}
+/* 
+.advice_js {
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  animation-direction: ;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  } */
