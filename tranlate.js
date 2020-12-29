@@ -1,13 +1,12 @@
 const eBtn = document.querySelector('.eng'),
   kBtn = document.querySelector('.kor');
 
-eBtn.addEventListener('click', () => {
-  location.search('eng.html');
-});
-kBtn.addEventListener('click', () => {
-  location.search('index.html');
-});
+eBtn.addEventListener('click', gotoEng());
+kBtn.addEventListener('click', gotoKor);
 
-// const url = '/';
-// history.pushstate('', '', url);
-// const state = { sitename: 'webisfree' };
+function gotoEng() {
+  Location.href = 'https://je-rebecca.github.io/dictionary/eng';
+}
+function gotoKor() {
+  Location.href = 'https://www.naver.com/';
+}
