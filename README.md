@@ -21,7 +21,8 @@ function handleSubmit(text) {
   let eng = data[0];
   let kor = data[1];
   printValue(eng, kor);
-  clear();
+  clear(); 
+  /// eng  stand for words   kor stand for meaning 
 }
 ```
 using 'split' tag for distingushed with meaing and words (this function toatlly for the english not chinese word cause chinese need 3 array) 
