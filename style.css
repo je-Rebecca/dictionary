@@ -1,5 +1,6 @@
 :root {
   --fontsize-large: 50px;
+  --fontsize-mid: 20px;
   --padding: 10px;
   --checked: rgb(90, 90, 90);
   --white-color: white;
@@ -10,23 +11,28 @@
   text-align: center;
   /* align-items: center; */
 }
+
 body {
   display: flex;
   flex-direction: column;
   align-content: space-between;
   align-items: center;
   height: 100vh;
+  font-family: 'Dancing Script', cursive;
+  /* font-family: 'Josefin Sans', sans-serif; */
   /* margin-top: 200px; */
 }
 .header {
   display: flex;
   background-color: var(--white-color);
   justify-content: space-evenly;
+  width: 100%;
 }
+
 .wrap {
   background-color: rgb(255, 255, 255, 0.5);
   padding: 10px;
-  width: 300px;
+  width: 400px;
   margin: auto;
 }
 .wrap h1,
@@ -34,12 +40,13 @@ body {
   margin: var(--padding);
 }
 .advice_js {
-  justify-content: ;
+  font-family: 'Dancing Script', cursive;
 }
 .form,
 .hidden {
   display: none;
 }
+
 .js-clock h1 {
   font-size: calc(var(--fontsize-large) * 2);
   margin-top: calc(var(--padding) * 2);
@@ -47,22 +54,32 @@ body {
 }
 .span_meg {
   margin: var(--box-span);
+  font-size: calc(var(--fontsize-mid) / 1.2);
 }
 .js-word {
   margin: var(--box-span);
   display: flex;
   flex-direction: column;
+  font-family: 'Langar', cursive;
 }
 .js-word p {
   text-align: left;
 }
 .showing {
   display: block;
+  padding: calc(var(--padding) / 2);
+  margin: auto;
+  margin-top: var(--padding);
+  margin-bottom: var(--padding);
+}
+.js-wordList {
+  padding-left: 0px;
+  height: 200px;
+  overflow-y: scroll;
 }
 .js-wordList > li {
   display: flex;
-  /* padding-right: calc(var(--padding) * 3); */
-  width: 200px;
+  width: 300px;
   margin-left: auto;
   margin-right: auto;
   justify-content: space-between;
@@ -72,14 +89,13 @@ body {
 }
 .js-wordList > li > #spanBox {
   padding: 0px 0px 0px 10px;
+  font-size: var(--fontsize-mid);
   /* padding-left: var(--padding); */
 }
 .js-wordList > li > #spanBox > span {
   padding-left: calc(var(--padding) / 2);
 }
-.js-wordList {
-  padding-left: 0px;
-}
+
 .js-wordList #trashCan {
   opacity: 0%;
   outline: none;
