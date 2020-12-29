@@ -2,11 +2,10 @@ const eBtn = document.querySelector('.eng'),
   kBtn = document.querySelector('.kor');
 
 eBtn.addEventListener('click', () => {
-  history.pushState('', '', '/eng');
-  // location.href = 'http://127.0.0.1:5501/eng.html';
+  location.search('eng.html');
 });
 kBtn.addEventListener('click', () => {
-  location.href = 'http://127.0.0.1:5501/kor.html';
+  location.search('kor.html');
 });
 
 // const url = '/';
