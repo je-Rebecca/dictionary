@@ -5,7 +5,7 @@ eBtn.addEventListener('click', () => {
   location.search('eng.html');
 });
 kBtn.addEventListener('click', () => {
-  location.search('kor.html');
+  location.search('index.html');
 });
 
 // const url = '/';
